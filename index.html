@@ -382,6 +382,30 @@
       background-color: rgba(255,255,255,0.12);
     }
 
+    .field input {
+      color-scheme: dark;
+    }
+
+    .field input:-webkit-autofill,
+    .field input:-webkit-autofill:hover,
+    .field input:-webkit-autofill:focus,
+    .field input:-webkit-autofill:active {
+      -webkit-text-fill-color: var(--text);
+      caret-color: var(--text);
+      box-shadow: 0 0 0 1000px #24289e inset;
+      transition: background-color 99999s ease-out 0s, border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .field input:-webkit-autofill:focus {
+      box-shadow: 0 0 0 1000px #2d31a3 inset;
+    }
+
+    .field input:autofill {
+      background-color: #24289e !important;
+      color: var(--text) !important;
+      -webkit-text-fill-color: var(--text);
+    }
+
     .field input.error,
     .field select.error { border-color: #ffb4c4; }
 
