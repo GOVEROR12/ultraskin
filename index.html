@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ultra Skin — запис на процедуру | Дніпро</title>
+  <meta name="description" content="Апаратна та ін’єкційна косметологія для обличчя й тіла. Чистки, біоревіталізація, Endospheres, лазерна епіляція. Дніпро, вул. Шевченка, 20.">
+  <meta name="theme-color" content="#111596">
+  <meta property="og:title" content="Ultra Skin — запис на процедуру | Дніпро">
+  <meta property="og:description" content="Апаратна та ін’єкційна косметологія для обличчя й тіла. Ultra Skin, Дніпро, вул. Шевченка, 20.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111596'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial' font-size='22' font-weight='700' fill='white'%3EUS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+    :root {
+      --text: #fbf2ea;
+      --muted: #d0e4ff;
+      --line: rgba(255,255,255,0.22);
+      --blue: #111596;
+    }
+
+    html, body {
+      background: #111596;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      color: var(--text);
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: calc(28px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));
+      background:
+        radial-gradient(900px 480px at 50% -12%, rgba(208,228,255,0.16), transparent 58%),
+        #111596;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      z-index: 0;
+      left: 50%;
+      top: 38%;
+      width: min(520px, 92%);
+      aspect-ratio: 122 / 163;
+      transform: translate(-50%, -50%);
+      background: url("Icon columbia blue.svg") center / contain no-repeat;
+      opacity: 0.03;
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+    }
+
+    .brand {
+      margin-bottom: 20px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .logo {
+      display: block;
+      width: min(100%, 400px);
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      max-width: 100%;
+      gap: 8px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1.5px solid rgba(255,255,255,0.75);
+      border-radius: 999px;
+      padding: 7px 14px 7px 12px;
+      margin-bottom: 18px;
+      animation: fadeUp 0.6s ease 0.05s both;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .badge:hover,
+    .badge:focus-visible {
+      background: rgba(255,255,255,0.12);
+      border-color: #fff;
+      outline: none;
+    }
+
+    .badge-icon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .badge-address,
+    .badge-map {
+      white-space: nowrap;
+    }
+
+    .badge-map {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      background: #fff;
+      color: #111596;
+      border-radius: 999px;
+      padding: 4px 8px;
+    }
+
+    .badge-map svg {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 380px) {
+      .badge {
+        font-size: 14px;
+        gap: 6px;
+        padding: 6px 8px 6px 10px;
+      }
+
+      .badge-map {
+        font-size: 12px;
+        padding: 3px 7px;
+      }
+    }
+
+    .subtitle {
+      font-size: 18px;
+      line-height: 1.45;
+      color: var(--muted);
+      margin-bottom: 28px;
+      animation: fadeUp 0.6s ease 0.12s both;
+    }
+
+    h2 {
+      font-family: Roboto, sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      font-size: 32px;
+      line-height: 1.1;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    form {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      animation: fadeUp 0.6s ease 0.2s both;
+    }
+
+    .field { text-align: left; }
+
+    .field label {
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--muted);
+      margin-bottom: 6px;
+      padding-left: 4px;
+    }
+
+    .field input,
+    .field select,
+    .picker-btn {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text);
+      background: rgba(255,255,255,0.08);
+      border: 1.5px solid rgba(255,255,255,0.2);
+      border-radius: 16px;
+      padding: 15px 16px;
+      font-family: inherit;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .picker { position: relative; z-index: 4; }
+
+    .picker-native {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .picker-btn {
+      appearance: none;
+      position: relative;
+      text-align: left;
+      cursor: pointer;
+      padding-right: 44px;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+
+    .picker-btn::after {
+      content: "";
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      width: 16px;
+      height: 16px;
+      transform: translateY(-50%);
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6 9l6 6 6-6' stroke='%23d0e4ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 16px no-repeat;
+      pointer-events: none;
+    }
+
+    .picker-btn.is-placeholder { color: rgba(208,228,255,0.55); }
+
+    .picker-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      background: rgba(8, 12, 40, 0.55);
+    }
+
+    .picker-backdrop[hidden],
+    .picker-menu[hidden] { display: none; }
+
+    .picker-menu {
+      position: fixed;
+      z-index: 21;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: min(440px, calc(100% - 32px));
+      max-height: min(70vh, 560px);
+      max-height: min(560px, calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px));
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: #fff;
+      color: #111596;
+      border-radius: 16px;
+      box-shadow: 0 24px 60px rgba(6, 10, 40, 0.35);
+    }
+
+    .picker-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 14px 10px 16px;
+      border-bottom: 1px solid #e6e8f4;
+      font-weight: 700;
+    }
+
+    .picker-done {
+      border: 0;
+      background: #111596;
+      color: #fff;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+
+    .picker-scroll {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: auto;
+      padding: 6px 4px 6px 6px;
+      scrollbar-width: thin;
+      scrollbar-color: #c5cae6 transparent;
+    }
+
+    .picker-scroll::-webkit-scrollbar { width: 8px; }
+
+    .picker-scroll::-webkit-scrollbar-track {
+      background: transparent;
+      margin: 10px 0;
+    }
+
+    .picker-scroll::-webkit-scrollbar-thumb {
+      background: #c5cae6;
+      border-radius: 8px;
+    }
+
+    .picker-group {
+      margin: 8px 12px 2px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #5c6494;
+    }
+
+    .picker-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      width: 100%;
+      text-align: left;
+      border: 0;
+      background: #fff;
+      color: #111596;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.3;
+      padding: 10px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .picker-option::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      margin-top: 3px;
+      border: 1.5px solid #111596;
+      border-radius: 4px;
+      background: #fff;
+    }
+
+    .picker-option-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .picker-option-desc {
+      font-size: 13px;
+      line-height: 1.35;
+      color: #5c6494;
+    }
+
+    .picker-option:hover { background: #f4f6ff; }
+
+    .picker-option[aria-selected="true"] { background: #eceefe; }
+
+    .picker-option[aria-selected="true"]::before {
+      border-color: #111596;
+      background: #111596 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 13l4 4L19 7' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 12px no-repeat;
+    }
+
+    .picker.error .picker-btn { border-color: #ffb4c4; }
+
+    .field input::placeholder { color: rgba(208,228,255,0.5); }
+
+    .field input:focus,
+    .field select:focus,
+    .picker-btn:focus {
+      outline: none;
+      border-color: #fff;
+      background-color: rgba(255,255,255,0.12);
+    }
+
+    .field input.error,
+    .field select.error { border-color: #ffb4c4; }
+
+    .form-error {
+      display: none;
+      text-align: left;
+      font-size: 13px;
+      line-height: 1.45;
+      color: #ffe1e8;
+      background: rgba(90, 10, 30, 0.28);
+      border: 1px solid rgba(255,180,196,0.45);
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+
+    .form-error.show { display: block; }
+
+    .btn {
+      margin-top: 4px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--blue);
+      background: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 16px 18px;
+      cursor: pointer;
+      font-family: inherit;
+      box-shadow: 0 12px 30px rgba(6, 18, 70, 0.28);
+      transition: transform 0.15s;
+    }
+
+    .btn:active { transform: scale(0.98); }
+    .btn:disabled { opacity: 0.75; cursor: default; }
+
+    .privacy {
+      position: relative;
+      z-index: 1;
+      margin-top: 14px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: rgba(213,226,255,0.72);
+      animation: fadeUp 0.6s ease 0.24s both;
+    }
+
+    .success {
+      display: none;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+      animation: popIn 0.5s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+    }
+
+    .success.show { display: block; }
+    .card.hide { display: none; }
+
+    .success .check {
+      width: 84px;
+      height: 84px;
+      margin: 8px auto 22px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 40px rgba(6, 18, 70, 0.28);
+    }
+
+    .success h2 {
+      font-family: Roboto, sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .success p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.94); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card" id="card">
+    <div class="brand">
+      <img class="logo" src="logo.png" alt="Ultra Skin">
+    </div>
+
+    <a class="badge" href="https://www.google.com/maps/dir/?api=1&destination=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0+20,+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE" target="_blank" rel="noopener">
+      <svg class="badge-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"/>
+      </svg>
+      <span class="badge-address">Дніпро · Шевченка, 20</span>
+      <span class="badge-map">на карті
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a>
+
+    <p class="subtitle">Апаратна та ін’єкційна косметологія для обличчя й тіла. Індивідуальний підбір процедур та професійний догляд за шкірою.</p>
+
+    <form id="leadForm" novalidate>
+      <div class="field">
+        <label for="name">Ваше ім’я</label>
+        <input type="text" id="name" name="name" placeholder="Як до вас звертатись" autocomplete="given-name" required>
+      </div>
+      <div class="field">
+        <label for="phone">Номер телефону</label>
+        <input type="tel" id="phone" name="phone" placeholder="+380 __ ___ __ __" autocomplete="tel" inputmode="tel" required>
+      </div>
+      <div class="field">
+        <label for="serviceBtn">Оберіть процедури</label>
+        <div class="picker" id="servicePicker">
+          <select id="service" name="service" class="picker-native" tabindex="-1" aria-hidden="true" multiple>
+            <option value="" selected>Оберіть процедуру</option>
+            <option>Потрібна консультація</option>
+            <option>Чистки обличчя</option>
+            <option>Біоревіталізація</option>
+            <option>Ін’єкційна косметологія</option>
+            <option>Мікроголковий RF</option>
+            <option>Доглядові процедури</option>
+            <option>Endospheres Therapy</option>
+            <option>Віскі обгортання</option>
+            <option>Ліполітики</option>
+            <option>Діодна лазерна епіляція</option>
+            <option>Зони обличчя</option>
+            <option>Тіло</option>
+            <option>Комплексні програми</option>
+          </select>
+          <button type="button" class="picker-btn is-placeholder" id="serviceBtn" aria-haspopup="dialog" aria-expanded="false">Можна обрати кілька</button>
+          <div class="picker-backdrop" id="serviceBackdrop" hidden></div>
+          <div class="picker-menu" id="serviceMenu" role="dialog" aria-modal="true" aria-label="Оберіть процедури" hidden>
+            <div class="picker-head">
+              <span>Оберіть процедури</span>
+              <button type="button" class="picker-done" id="serviceDone">Готово</button>
+            </div>
+            <div class="picker-scroll" role="listbox" aria-multiselectable="true">
+            <button type="button" class="picker-option" role="option">Потрібна консультація</button>
+            <p class="picker-group">Обличчя</p>
+            <button type="button" class="picker-option" role="option">Чистки обличчя</button>
+            <button type="button" class="picker-option" role="option">Біоревіталізація</button>
+            <button type="button" class="picker-option" role="option">Ін’єкційна косметологія</button>
+            <button type="button" class="picker-option" role="option">Мікроголковий RF</button>
+            <button type="button" class="picker-option" role="option">Доглядові процедури</button>
+            <p class="picker-group">Тіло</p>
+            <button type="button" class="picker-option" role="option" data-name="Endospheres Therapy">
+              <span class="picker-option-text">
+                <span>Endospheres Therapy</span>
+                <span class="picker-option-desc">Корекція целюліту, лімфодренаж, робота з набряками та тонусом шкіри</span>
+              </span>
+            </button>
+            <button type="button" class="picker-option" role="option">Віскі обгортання</button>
+            <button type="button" class="picker-option" role="option">Ліполітики</button>
+            <p class="picker-group">Лазерна епіляція</p>
+            <button type="button" class="picker-option" role="option">Діодна лазерна епіляція</button>
+            <button type="button" class="picker-option" role="option">Зони обличчя</button>
+            <button type="button" class="picker-option" role="option">Тіло</button>
+            <button type="button" class="picker-option" role="option">Комплексні програми</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label for="when">Бажаний день / час</label>
+        <input type="text" id="when" name="when" placeholder="Наприклад, завтра після 16:00" autocomplete="off">
+      </div>
+      <p class="form-error" id="formError" role="alert"></p>
+      <button type="submit" class="btn" id="submitBtn">Записатися</button>
+    </form>
+
+    <p class="privacy">Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних.</p>
+  </div>
+
+  <div class="success" id="success">
+    <div class="check">
+      <svg width="42" height="42" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#111596" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h2>Дякуємо!</h2>
+    <p>Заявку надіслано.<br>Ми зв’яжемося з вами найближчим часом і узгодимо час візиту.</p>
+  </div>
+
+  <script>
+    // ===== TELEGRAM =====
+    // 1. У Telegram відкрийте @BotFather → /newbot → скопіюйте токен.
+    // 2. Напишіть боту будь-яке повідомлення.
+    // 3. Відкрийте в браузері:
+    //    https://api.telegram.org/botВАШ_ТОКЕН/getUpdates
+    //    і скопіюйте chat.id (це число).
+    // 4. Вставте значення нижче і завантажте файл знову.
+    var BOT_TOKEN = '';
+    var CHAT_ID = '';
+    // ====================
+
+    var form = document.getElementById('leadForm');
+    var nameInput = document.getElementById('name');
+    var phoneInput = document.getElementById('phone');
+    var serviceInput = document.getElementById('service');
+    var servicePicker = document.getElementById('servicePicker');
+    var serviceBtn = document.getElementById('serviceBtn');
+    var serviceMenu = document.getElementById('serviceMenu');
+    var serviceBackdrop = document.getElementById('serviceBackdrop');
+    var serviceDone = document.getElementById('serviceDone');
+
+    function setServiceMenu(open) {
+      serviceMenu.hidden = !open;
+      serviceBackdrop.hidden = !open;
+      serviceBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    function closeServiceMenu() {
+      setServiceMenu(false);
+    }
+
+    function selectedServices() {
+      return Array.prototype.map.call(
+        serviceMenu.querySelectorAll('.picker-option[aria-selected="true"]'),
+        function (item) { return (item.getAttribute('data-name') || item.textContent).trim(); }
+      );
+    }
+
+    function syncServiceLabel() {
+      var picked = selectedServices();
+      Array.prototype.forEach.call(serviceInput.options, function (opt) {
+        opt.selected = picked.indexOf(opt.text) !== -1;
+      });
+      if (!picked.length) {
+        serviceBtn.textContent = 'Можна обрати кілька';
+        serviceBtn.classList.add('is-placeholder');
+        return;
+      }
+      serviceBtn.textContent = picked.join(', ');
+      serviceBtn.classList.remove('is-placeholder');
+    }
+
+    serviceBtn.addEventListener('click', function () {
+      setServiceMenu(serviceMenu.hidden);
+    });
+
+    serviceDone.addEventListener('click', closeServiceMenu);
+    serviceBackdrop.addEventListener('click', closeServiceMenu);
+
+    serviceMenu.addEventListener('click', function (e) {
+      var option = e.target.closest('.picker-option');
+      if (!option) return;
+      var selected = option.getAttribute('aria-selected') === 'true';
+      option.setAttribute('aria-selected', selected ? 'false' : 'true');
+      syncServiceLabel();
+      servicePicker.classList.remove('error');
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeServiceMenu();
+    });
+    var whenInput = document.getElementById('when');
+    var submitBtn = document.getElementById('submitBtn');
+    var formError = document.getElementById('formError');
+
+    form.addEventListener('change', function (e) {
+      if (e.target === serviceInput) syncServiceLabel();
+    });
+
+    function showError(text) {
+      formError.textContent = text;
+      formError.classList.add('show');
+    }
+
+    function clearError() {
+      formError.textContent = '';
+      formError.classList.remove('show');
+    }
+
+    function formatMessage(data) {
+      var when = new Date().toLocaleString('uk-UA', {
+        timeZone: 'Europe/Kyiv',
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+      var services = data.services.map(function (item) {
+        return '• ' + item;
+      }).join('\n');
+      var lines = [
+        '💙 Нова заявка — Ultra Skin',
+        '',
+        '👤 Ім’я: ' + data.name,
+        '📱 Телефон: ' + data.phone,
+        '',
+        '✨ Процедури:',
+        services
+      ];
+      if (data.when) lines.push('', '🕐 Коли зручно: ' + data.when);
+      lines.push('', '📍 Дніпро, вул. Шевченка, 20', '📅 ' + when);
+      return lines.join('\n');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      clearError();
+
+      var name = nameInput.value.trim().replace(/[\r\n]/g, ' ').slice(0, 80);
+      var phone = phoneInput.value.trim().replace(/[\r\n]/g, ' ').slice(0, 24);
+      var services = selectedServices();
+      var whenText = whenInput.value.trim().replace(/[\r\n]/g, ' ').slice(0, 80);
+      var digits = phone.replace(/\D/g, '');
+      var valid = true;
+
+      nameInput.classList.remove('error');
+      phoneInput.classList.remove('error');
+      serviceInput.classList.remove('error');
+      servicePicker.classList.remove('error');
+
+      if (name.length < 2) {
+        nameInput.classList.add('error');
+        valid = false;
+      }
+      if (digits.length < 10) {
+        phoneInput.classList.add('error');
+        valid = false;
+      }
+      if (!services.length) {
+        serviceInput.classList.add('error');
+        servicePicker.classList.add('error');
+        valid = false;
+      }
+      if (!valid) {
+        showError('Заповніть ім’я, телефон і хоча б одну процедуру.');
+        return;
+      }
+
+      if (!BOT_TOKEN || !CHAT_ID) {
+        showError('Форма ще не підключена до Telegram. Додайте токен бота і chat id у файлі index.html — інструкція в README.');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Надсилаємо...';
+
+      fetch('https://api.telegram.org/bot' + BOT_TOKEN + '/sendMessage', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: CHAT_ID,
+          text: formatMessage({
+            name: name,
+            phone: phone,
+            services: services,
+            when: whenText
+          }),
+          disable_web_page_preview: true
+        })
+      })
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+          if (!data || !data.ok) throw new Error('telegram');
+          document.getElementById('card').classList.add('hide');
+          document.getElementById('success').classList.add('show');
+          window.scrollTo(0, 0);
+        })
+        .catch(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Записатися';
+          showError('Не вдалося надіслати заявку. Спробуйте ще раз.');
+        });
+    });
+  </script>
+</body>
+</html>
