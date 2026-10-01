@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Дякуємо — Ultra Skin</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#111596">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111596'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial' font-size='22' font-weight='700' fill='white'%3EUS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --text: #fbf2ea;
+      --muted: #d0e4ff;
+    }
+
+    html, body {
+      background: #111596;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      color: var(--text);
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: calc(28px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));
+      background:
+        radial-gradient(900px 480px at 50% -12%, rgba(208,228,255,0.16), transparent 58%),
+        #111596;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      z-index: 0;
+      left: 50%;
+      top: 42%;
+      width: min(520px, 92%);
+      aspect-ratio: 122 / 163;
+      transform: translate(-50%, -50%);
+      background: url("../Icon columbia blue.svg") center / contain no-repeat;
+      opacity: 0.03;
+      pointer-events: none;
+    }
+
+    .thanks {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: min(100%, 280px);
+      height: auto;
+      margin: 0 auto 28px;
+    }
+
+    .check {
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+  </style>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2370900333313764');
+  fbq('track', 'PageView');
+  try {
+    if (sessionStorage.getItem('us-lead') === '1') {
+      sessionStorage.removeItem('us-lead');
+      fbq('track', 'Lead');
+    }
+  } catch (err) {}
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2370900333313764&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+  <main class="thanks">
+    <img class="logo" src="../logo.png" alt="Ultra Skin">
+    <div class="check">
+      <svg width="42" height="42" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#111596" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h1>Дякуємо!</h1>
+    <p>Заявку надіслано.<br>Ми зв’яжемося з вами найближчим часом і узгодимо час візиту.</p>
+  </main>
+</body>
+</html>
