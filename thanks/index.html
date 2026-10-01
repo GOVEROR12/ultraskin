@@ -110,17 +110,14 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '2370900333313764');
   fbq('track', 'PageView');
-  try {
-    if (sessionStorage.getItem('us-lead') === '1') {
-      sessionStorage.removeItem('us-lead');
-      fbq('track', 'Lead');
-    }
-  } catch (err) {}
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=2370900333313764&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
+  <script>
+    fbq('track', 'Lead');
+  </script>
 </head>
 <body>
   <main class="thanks">
